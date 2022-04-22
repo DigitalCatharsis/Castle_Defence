@@ -12,9 +12,6 @@ public class InputManager : Singleton<InputManager>
     public event StartTouchEvent OnStartTouch;
     public delegate void EndTouchEvent(Vector2 position, float time);
     public event EndTouchEvent OnEndTouch;
-
-
-
     private TouchControls touchControls;
      
     private void Awake()

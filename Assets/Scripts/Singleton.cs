@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Singleton<T> : MonoBehaviour where T : Component  //Ограничение на любой типа, отнаследованный от component
+public class Singleton<T> : MonoBehaviour where T : Component  //Ограничение на любой тип, отнаследованный от component
 {
     private static T _instance;
     public static T Instance
@@ -11,7 +11,7 @@ public class Singleton<T> : MonoBehaviour where T : Component  //Ограничение на 
         {
             if (_instance == null)
             {
-                var objs = FindObjectsOfType (typeof(T)) as T[];
+                var objs = FindObjectsOfType (typeof(T)) as T[];   //as - это как Cast. В случаях если каст не возможен будет рантайм, а с as будет null 
                 if (objs.Length > 0)
                 {
                     _instance = objs[0];
@@ -30,7 +30,6 @@ public class Singleton<T> : MonoBehaviour where T : Component  //Ограничение на 
             return _instance;
         }
     }
-
     private void OnDestroy()
     {
         if (_instance == this)

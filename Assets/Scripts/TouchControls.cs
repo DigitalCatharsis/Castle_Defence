@@ -70,7 +70,7 @@ public partial class @TouchControls : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""5c2fcf71-a5df-4097-91e1-93f1c248acaf"",
-                    ""path"": ""<Touchscreen>/primaryTouch/press"",
+                    ""path"": ""<Touchscreen>/touch0/press"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
