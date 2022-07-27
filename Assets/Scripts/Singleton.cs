@@ -18,7 +18,7 @@ public class Singleton<T> : MonoBehaviour where T : Component  //Ограничение на 
                 }
                 if(objs.Length > 1)
                 {
-                    Debug.LogError("There is more than one " + typeof(T).Name + "in the scene.");
+                    Debug.LogError("There is more than one " + typeof(T).Name + " in the scene.");
                 }
                 if (_instance == null)
                 {
@@ -44,7 +44,7 @@ public class SingletonPersistent<T> : MonoBehaviour where T : Component  //Огран
 {
     public static T Instance { get; private set; }
 
-    public virtual void Awake ()
+    public virtual void Awake ()      //да, надо вызывать base.awake 
     {
         if (Instance == null)
         {

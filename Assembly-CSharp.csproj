@@ -56,10 +56,11 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\TouchControls.cs" />
-    <Compile Include="Assets\Scripts\InputManager.cs" />
-    <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\TestTouch.cs" />
+    <Compile Include="Assets\Scripts\Singleton.cs" />
+    <Compile Include="Assets\Scripts\InputManager.cs" />
+    <Compile Include="Assets\Scripts\TouchControls.cs" />
+    <Compile Include="Assets\Scripts\CameraMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\StoreAssets\FantasyEnvironments\Environments\README.txt" />
